@@ -154,7 +154,7 @@
               "-d",
               "projects/components"
             ],
-            "outputDir": "dist/storybook/components",
+            "outputDir": "docs",
             "styles": [
               "projects/components/.storybook/storybook-styles.scss"
             ]

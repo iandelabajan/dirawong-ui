@@ -48,21 +48,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/components/src/lib/foundation/colors.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta",
-                "defaultValue": "{\n  title: 'Foundation/Colors',\n  tags: ['autodocs'],\n  parameters: {\n    docs: {\n      description: {\n        component: `\nColor tokens are the foundation of the Dirawong Design System.\n\n**Token Architecture:**\n- **Primitive tokens**: Raw color values (e.g., \\`--primitive-navy-600\\`)\n- **Semantic tokens**: Purpose-based colors (e.g., \\`--dw-color-primary\\`)\n\nThis two-layer system allows for easy rebranding while maintaining consistent naming.\n        `,\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
                 "defaultValue": "{\n  title: 'Components/Button',\n  tags: ['autodocs'],\n  parameters: {\n    docs: {\n      description: {\n        component: `\nMaterial buttons customized with Dirawong design tokens.\n\n**Available Variants:**\n- **Elevated**: Raised button with shadow\n- **Filled**: Solid background button (default)\n- **Tonal**: Subtle filled button\n- **Outlined**: Button with border\n- **Text**: Plain text button\n\n**Token Integration:**\n- Border radius: \\`--mat-button-*-container-shape: var(--dw-radius-md)\\`\n- Padding: \\`var(--dw-space-3) var(--dw-space-4)\\`\n- Colors: \\`--mat-sys-primary\\`, \\`--mat-sys-tertiary\\`\n        `,\n      },\n    },\n  },\n  argTypes: {\n    variant: {\n      control: 'select',\n      options: ['elevated', 'filled', 'tonal', 'outlined', 'text'],\n      description: 'Button style variant',\n    },\n    text: {\n      control: 'text',\n      description: 'Button label text',\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Disable the button',\n    },\n  },\n  args: {\n    variant: 'filled',\n    text: 'Button',\n    disabled: false,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/components/src/lib/foundation/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta",
+                "defaultValue": "{\n  title: 'Foundation/Colors',\n  tags: ['autodocs'],\n  parameters: {\n    docs: {\n      description: {\n        component: `\nColor tokens are the foundation of the Dirawong Design System.\n\n**Token Architecture:**\n- **Primitive tokens**: Raw color values (e.g., \\`--primitive-navy-600\\`)\n- **Semantic tokens**: Purpose-based colors (e.g., \\`--dw-color-primary\\`)\n\nThis two-layer system allows for easy rebranding while maintaining consistent naming.\n        `,\n      },\n    },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -106,7 +106,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/components/src/lib/foundation/colors.stories.ts",
+                "file": "projects/components/src/lib/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -117,7 +117,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/components/src/lib/button/button.stories.ts",
+                "file": "projects/components/src/lib/foundation/colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -224,19 +224,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/components/src/lib/foundation/colors.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj",
-                    "file": "projects/components/src/lib/foundation/colors.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/components/src/lib/button/button.stories.ts": [
                 {
                     "name": "Story",
@@ -244,6 +231,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
                     "file": "projects/components/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/components/src/lib/foundation/colors.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj",
+                    "file": "projects/components/src/lib/foundation/colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
