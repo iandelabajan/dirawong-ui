@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "tokens:figma": "node scripts/build-figma-tokens.mjs"
   },
   "prettier": {
     "printWidth": 100,
