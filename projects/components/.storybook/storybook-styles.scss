@@ -1,0 +1,95 @@
+/* =========================================================
+   Storybook Global Styles
+   ========================================================= */
+
+/* Import Angular Material core */
+@use '@angular/material' as mat;
+
+/* Import design tokens */
+@import '../../tokens/src/tokens.css';
+
+/* Dirawong brand color */
+:root {
+  --dirawong-brand-color: #1d1429;
+}
+
+/* Material Theme Configuration */
+html {
+  height: 100%;
+
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+/* Base styles */
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+}
+
+/* Token → Material mappings */
+html {
+  /* Shape customization - global fallback */
+  --mat-sys-corner-full: var(--dw-radius-md);
+  
+  /* Shape customization - specific button variants (CORRECT token names) */
+  --mat-button-filled-container-shape: var(--dw-radius-md);
+  --mat-button-outlined-container-shape: var(--dw-radius-md);
+  --mat-button-text-container-shape: var(--dw-radius-md);
+  --mat-button-protected-container-shape: var(--dw-radius-md);
+  --mat-button-tonal-container-shape: var(--dw-radius-md);
+  
+  /* Color overrides */
+  --mat-sys-primary: var(--dw-color-primary);
+  --mat-sys-tertiary: var(--dw-color-accent);
+}
+
+/* Button customization using Material's official mixin API */
+.mat-mdc-button.mat-mdc-button-base {
+  @include mat.button-overrides((
+    filled-container-color: var(--dw-color-primary),
+    filled-label-text-color: var(--dw-on-primary),
+  ));
+}
+
+/* Accent button variant */
+.accent-button {
+  @include mat.button-overrides((
+     filled-container-color: var(--dw-color-accent),
+    filled-label-text-color: var(--dw-on-accent),
+    outlined-label-text-color: var(--dw-color-accent),
+    outlined-outline-color: var(--dw-color-accent),
+    tonal-container-color: var(--dw-color-accent),
+    tonal-label-text-color: var(--dw-on-accent),
+    text-label-text-color: var(--dw-color-accent),
+  ));
+}
+
+/* =============================
+   Theme Switcher Overrides
+   ============================= */
+[data-theme="hoot"] {
+  /* No overrides: uses default tokens */
+}
+
+[data-theme="kasisto"] {
+  --dw-color-primary: #08a86f;
+  --dw-color-accent: #1c2029;
+  --dw-surface-0: #e6f7f0;
+  --dw-text-primary: #1c2029;
+
+  /* Map to Material variables */
+  --mat-sys-primary: var(--dw-color-primary);
+  --mat-sys-tertiary: var(--dw-color-accent);
+  --mat-sys-on-primary: #fff;
+}

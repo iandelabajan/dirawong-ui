@@ -1,0 +1,104 @@
+/* =========================================================
+   1. Angular Material Setup (REQUIRED FIRST)
+   ---------------------------------------------------------
+   Sass @use rules must come before any other rules.
+   ========================================================= */
+@use '@angular/material' as mat;
+
+
+/* =========================================================
+   2. Design Tokens
+   ---------------------------------------------------------
+   Global design decisions (color, spacing, radius, type).
+   Single source of truth.
+   ========================================================= */
+@import '../../tokens/src/tokens.css';
+
+
+/* =========================================================
+   3. Material Theme Definition (Material 3)
+   ---------------------------------------------------------
+   Generates Material system CSS variables.
+   Starter palette is scaffolding only.
+   ========================================================= */
+html {
+  height: 100%;
+
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+
+/* =========================================================
+   4. Base Application Styles
+   ---------------------------------------------------------
+   Use Material system variables for surfaces & typography.
+   Do NOT override with tokens yet.
+   ========================================================= */
+body {
+  color-scheme: light;
+
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  margin: 0;
+  height: 100%;
+}
+
+
+/* =========================================================
+   5. Token → Material Shape Mapping (Material 3 CORRECT WAY)
+   ---------------------------------------------------------
+   Material 3 ignores border-radius.
+   Shape is controlled via Material system tokens.
+   ========================================================= */
+html {
+  /* Material system corner token - used as fallback by all buttons */
+  --mat-sys-corner-full: var(--dw-radius-md);
+}
+
+
+/* =========================================================
+   6. Token → Material Color Override (Official Material API)
+   ---------------------------------------------------------
+   Use Material's button-overrides mixin for type-safe customization.
+   ========================================================= */
+html {
+  /* Override Material system colors */
+  --mat-sys-primary: var(--dw-color-primary);
+  --mat-sys-tertiary: var(--dw-color-accent);
+}
+
+/* Primary buttons (default) */
+.mat-mdc-button.mat-mdc-button-base {
+  @include mat.button-overrides((
+    filled-container-color: var(--dw-color-primary),
+    filled-label-text-color: var(--dw-on-primary),
+  ));
+}
+
+/* Accent button variant */
+.accent-button {
+  @include mat.button-overrides((
+    filled-container-color: var(--dw-color-accent),
+    filled-label-text-color: var(--dw-on-accent),
+  ));
+}
+
+
+/* =========================================================
+   7. Demo Container Styles
+   ========================================================= */
+.demo-container {
+  padding: var(--dw-space-6);
+  display: flex;
+  gap: var(--dw-space-4);
+  flex-wrap: wrap;
+}

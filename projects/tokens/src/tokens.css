@@ -1,0 +1,110 @@
+/* ============================================================
+   DIRAWONG DESIGN TOKENS
+   Token-first • Semantic • Material-friendly
+   ============================================================ */
+
+:root {
+  /* =========================================================
+     LAYER 1: PRIMITIVE TOKENS
+     ---------------------------------------------------------
+     Raw, foundational values.
+     Rebrand-safe. Never used directly by components.
+     ========================================================= */
+
+  /* Primitive Colors */
+  --primitive-navy-600: #19305c;
+  --primitive-orange-500: #f5853e;
+  --primitive-red-600: #dc2626;
+
+  --primitive-gray-50: #ffffff;
+  --primitive-gray-100: #f8fafc;
+  --primitive-gray-200: #eef2f7;
+  --primitive-gray-400: #94a3b8;
+  --primitive-gray-600: #475569;
+  --primitive-gray-900: #0f172a;
+
+  /* Primitive Spacing (4pt grid) */
+  --primitive-space-1: 4px;
+  --primitive-space-2: 8px;
+  --primitive-space-3: 12px;
+  --primitive-space-4: 16px;
+  --primitive-space-5: 20px;
+  --primitive-space-6: 24px;
+
+  /* Primitive Radius */
+  --primitive-radius-sm: 8px;
+  --primitive-radius-md: 12px;
+  --primitive-radius-lg: 16px;
+
+  /* Primitive Typography */
+  --primitive-font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --primitive-font-size-sm: 12px;
+  --primitive-font-size-base: 14px;
+  --primitive-font-size-lg: 16px;
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-semibold: 600;
+
+  /* =========================================================
+     LAYER 2: SEMANTIC TOKENS
+     ---------------------------------------------------------
+     Purpose-driven.
+     These are the ONLY tokens components should consume.
+     ========================================================= */
+
+  /* Brand Colors */
+  --dw-color-primary: var(--primitive-navy-600);
+  --dw-color-accent: var(--primitive-orange-500);
+  --dw-color-danger: var(--primitive-red-600);
+
+  /* On-Colors (text/icons on filled surfaces) */
+  --dw-on-primary: #ffffff;
+  --dw-on-accent: #ffffff;
+  --dw-on-danger: #ffffff;
+
+  /* Surfaces (Material-friendly naming) */
+  --dw-surface-base: var(--primitive-gray-50);
+  --dw-surface-container: var(--primitive-gray-100);
+  --dw-surface-elevated: var(--primitive-gray-200);
+
+  /* Text */
+  --dw-text-primary: var(--primitive-gray-900);
+  --dw-text-secondary: var(--primitive-gray-600);
+  --dw-text-disabled: var(--primitive-gray-400);
+
+  /* Spacing */
+  --dw-space-1: var(--primitive-space-1);
+  --dw-space-2: var(--primitive-space-2);
+  --dw-space-3: var(--primitive-space-3);
+  --dw-space-4: var(--primitive-space-4);
+  --dw-space-5: var(--primitive-space-5);
+  --dw-space-6: var(--primitive-space-6);
+
+  /* Radius */
+  --dw-radius-sm: var(--primitive-radius-sm);
+  --dw-radius-md: var(--primitive-radius-md);
+  --dw-radius-lg: var(--primitive-radius-lg);
+
+  /* Typography */
+  --dw-font-family: var(--primitive-font-sans);
+  --dw-font-size-sm: var(--primitive-font-size-sm);
+  --dw-font-size-base: var(--primitive-font-size-base);
+  --dw-font-size-lg: var(--primitive-font-size-lg);
+  --dw-font-weight-regular: var(--primitive-font-weight-regular);
+  --dw-font-weight-medium: var(--primitive-font-weight-medium);
+  --dw-font-weight-semibold: var(--primitive-font-weight-semibold);
+}
+
+/* ============================================================
+   GLOBAL BASELINE (OPTIONAL BUT RECOMMENDED)
+   ------------------------------------------------------------
+   Safe defaults. No component overrides.
+   ============================================================ */
+
+body {
+  font-family: var(--dw-font-family);
+  font-size: var(--dw-font-size-base);
+  font-weight: var(--dw-font-weight-regular);
+  color: var(--dw-text-primary);
+  background-color: var(--dw-surface-base);
+}
