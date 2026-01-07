@@ -1,14 +1,27 @@
 {
   "name": "dirawong-ui",
   "version": "0.0.0",
-  "scripts": {
+   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build",
+
+    "storybook": "ng run components:storybook",
+    "storybook:build": "ng run components:build-storybook",
+
+    "build:tokens": "ng build tokens",
+    "update:storybook-tokens": "npm install ./dist/tokens --prefix projects/components",
+    "update:demo-tokens": "npm install ./dist/tokens --prefix projects/demo",
+
+    "build:all": "npm run build:tokens && npm run update:storybook-tokens && npm run update:demo-tokens && npm run storybook:build",
+
+    "start:demo": "ng serve demo",
+    "start:storybook": "ng run components:storybook",
+
+    "start:all": "concurrently -k -n DEMO,STORYBOOK -c blue,magenta \"npm run start:demo\" \"npm run start:storybook\"",
+
     "tokens:figma": "node scripts/build-figma-tokens.mjs"
   },
   "prettier": {
@@ -38,22 +51,23 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/architect": "^0.2100.0",
+    "@angular-devkit/build-angular": "^21.0.0",
+    "@angular-devkit/core": "^21.0.0",
     "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.0",
-    "jsdom": "^27.1.0",
-    "ng-packagr": "^21.0.0",
-    "typescript": "~5.9.2",
-    "vitest": "^4.0.8",
-    "storybook": "^10.1.11",
-    "@storybook/angular": "^10.1.11",
+    "@angular/platform-browser-dynamic": "^21.0.0",
+    "@compodoc/compodoc": "^1.1.32",
     "@storybook/addon-a11y": "^10.1.11",
     "@storybook/addon-docs": "^10.1.11",
     "@storybook/addon-onboarding": "^10.1.11",
-    "@angular-devkit/build-angular": "^21.0.0",
-    "@angular-devkit/architect": "^0.2100.0",
-    "@angular-devkit/core": "^21.0.0",
-    "@angular/platform-browser-dynamic": "^21.0.0",
-    "@compodoc/compodoc": "^1.1.32"
+    "@storybook/angular": "^10.1.11",
+    "concurrently": "^9.2.1",
+    "jsdom": "^27.1.0",
+    "ng-packagr": "^21.0.0",
+    "storybook": "^10.1.11",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
   }
 }
