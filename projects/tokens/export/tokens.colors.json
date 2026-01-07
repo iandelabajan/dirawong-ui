@@ -80,7 +80,7 @@
   "Semantic": {
     "dw-color-primary": {
       "$type": "color",
-      "$value": "{Primitive.dw-primitive-red-600}"
+      "$value": "{Primitive.dw-primitive-blue-900}"
     },
     "dw-color-accent": {
       "$type": "color",
@@ -112,7 +112,7 @@
     },
     "dw-color-accent-tonal-dark": {
       "$type": "color",
-      "$value": "{Primitive.dw-primitive-orange-700}"
+      "$value": "{Primitive.dw-primitive-orange-500}"
     }
   }
 }
