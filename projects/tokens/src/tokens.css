@@ -66,7 +66,7 @@
      ========================================================= */
 
   /* === Brand Colors === */
-  --dw-color-primary: var(--dw-primitive-blue-400);
+  --dw-color-primary: var(--dw-primitive-blue-900);
   --dw-color-accent: var(--dw-primitive-orange-500);
   --dw-color-danger: var(--dw-primitive-red-600);
 
@@ -113,9 +113,9 @@
      Not consumed yet. Safe to extend later.
      ========================================================= */
 
-  /* --dw-color-primary-tonal: var(--dw-primitive-blue-400);
+  --dw-color-primary-tonal: var(--dw-primitive-blue-400);
   --dw-color-primary-tonal-light: var(--dw-primitive-blue-100);
-  --dw-color-primary-tonal-dark: var(--dw-primitive-blue-700); */
+  --dw-color-primary-tonal-dark: var(--dw-primitive-blue-700);
 
   --dw-color-accent-tonal: var(--dw-primitive-orange-400);
    --dw-color-accent-tonal-light: var(--dw-primitive-orange-100);

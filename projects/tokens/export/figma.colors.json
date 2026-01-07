@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "metadata": {},
+  "collections": [
+    {
+      "name": "Primitive",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "variables": [
+            {
+              "name": "dw-primitive-blue-100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#E3E8F9"
+            },
+            {
+              "name": "dw-primitive-blue-200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#C7D2F3"
+            },
+            {
+              "name": "dw-primitive-blue-400",
+              "type": "color",
+              "isAlias": false,
+              "value": "#7B93DB"
+            },
+            {
+              "name": "dw-primitive-blue-700",
+              "type": "color",
+              "isAlias": false,
+              "value": "#2C3E7B"
+            },
+            {
+              "name": "dw-primitive-blue-900",
+              "type": "color",
+              "isAlias": false,
+              "value": "#19305C"
+            },
+            {
+              "name": "dw-primitive-orange-100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFEEDE"
+            },
+            {
+              "name": "dw-primitive-orange-200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFD1B3"
+            },
+            {
+              "name": "dw-primitive-orange-400",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FBB97C"
+            },
+            {
+              "name": "dw-primitive-orange-500",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F5853E"
+            },
+            {
+              "name": "dw-primitive-red-600",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DC2626"
+            },
+            {
+              "name": "dw-primitive-gray-50",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF"
+            },
+            {
+              "name": "dw-primitive-gray-100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F8FAFC"
+            },
+            {
+              "name": "dw-primitive-gray-200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EEF2F7"
+            },
+            {
+              "name": "dw-primitive-gray-400",
+              "type": "color",
+              "isAlias": false,
+              "value": "#94A3B8"
+            },
+            {
+              "name": "dw-primitive-gray-600",
+              "type": "color",
+              "isAlias": false,
+              "value": "#475569"
+            },
+            {
+              "name": "dw-primitive-gray-900",
+              "type": "color",
+              "isAlias": false,
+              "value": "#0F172A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Semantic",
+      "modes": [
+        {
+          "name": "Mode 1",
+          "variables": [
+            {
+              "name": "dw-color-primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "Primitive",
+                "name": "dw-primitive-blue-900"
+              }
+            },
+            {
+              "name": "dw-color-accent",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "Primitive",
+                "name": "dw-primitive-orange-500"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
