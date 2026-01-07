@@ -9,78 +9,53 @@ const css = fs.readFileSync(
 );
 
 /**
- * STEP 1: extract primitive colors
- * --dw-primitive-*-*
+ * STEP 1: Extract primitive colors
+ * --dw-primitive-blue-900: #19305c;
  */
-const primitiveRegex = /--dw-primitive-([a-z]+-\d+):\s*(#[0-9a-fA-F]{6});/g;
+const primitiveRegex =
+  /--dw-primitive-([a-z]+-\d+):\s*(#[0-9a-fA-F]{6});/g;
 
-const primitives = [];
+const Primitive = {};
 let match;
 
 while ((match = primitiveRegex.exec(css))) {
   const [, name, value] = match;
-  primitives.push({
-    name: `dw-primitive-${name}`,
-    type: 'color',
-    isAlias: false,
-    value: value.toUpperCase()
-  });
+
+  Primitive[`dw-primitive-${name}`] = {
+    $type: 'color',
+    $value: value.toUpperCase()
+  };
 }
 
 /**
- * STEP 2: extract semantic aliases
- * --dw-color-primary / --dw-color-accent
+ * STEP 2: Extract semantic aliases
+ * --dw-color-primary: var(--dw-primitive-blue-900);
  */
 const semanticRegex =
-  /--dw-color-(primary|accent):\s*var\(--dw-primitive-([a-z]+-\d+)\);/g;
+  /--dw-color-([a-z-]+):\s*var\(--dw-primitive-([a-z]+-\d+)\);/g;
 
-const semantics = [];
+const Semantic = {};
 
 while ((match = semanticRegex.exec(css))) {
   const [, semanticName, primitiveRef] = match;
 
-  semantics.push({
-    name: `dw-color-${semanticName}`,
-    type: 'color',
-    isAlias: true,
-    value: {
-      collection: 'Primitive',
-      name: `dw-primitive-${primitiveRef}`
-    }
-  });
+  Semantic[`dw-color-${semanticName}`] = {
+    $type: 'color',
+    $value: `{Primitive.dw-primitive-${primitiveRef}}`
+  };
 }
 
 /**
- * STEP 3: build Figma-compatible JSON
+ * STEP 3: Build DTCG JSON
  */
 const output = {
-  version: '1.0.0',
-  metadata: {},
-  collections: [
-    {
-      name: 'Primitive',
-      modes: [
-        {
-          name: 'Mode 1',
-          variables: primitives
-        }
-      ]
-    },
-    {
-      name: 'Semantic',
-      modes: [
-        {
-          name: 'Mode 1',
-          variables: semantics
-        }
-      ]
-    }
-  ]
+  Primitive,
+  Semantic
 };
 
 fs.writeFileSync(
-  'projects/tokens/export/figma.colors.json',
+  'projects/tokens/export/tokens.colors.json',
   JSON.stringify(output, null, 2)
 );
 
-console.log('✅ Exported Figma color tokens');
+console.log('✅ Exported DTCG color tokens');
