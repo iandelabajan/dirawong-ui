@@ -1,10 +1,10 @@
 name: Export Figma Color Tokens
 
 on:
-  workflow_dispatch:
   push:
     paths:
-      - 'tokens/tokens.css'
+      - 'projects/tokens/src/tokens.css'
+  workflow_dispatch:
 
 jobs:
   export:
@@ -20,12 +20,12 @@ jobs:
           node-version: 20
 
       - name: Export Figma colors
-        run: node tokens/scripts/export-colors-to-figma.js
+        run: node projects/tokens/scripts/export-colors-to-figma.mjs
 
       - name: Commit exported tokens
         run: |
           git config user.name "dirawong-bot"
           git config user.email "bot@dirawong.dev"
-          git add tokens/export/figma.colors.json
+          git add projects/tokens/export/figma.colors.json
           git commit -m "chore(tokens): export figma color tokens" || echo "No changes"
           git push
