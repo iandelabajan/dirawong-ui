@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "dirawong-bot"
           git config user.email "bot@dirawong.dev"
-          git add projects/tokens/export/figma.colors.json
+          git add projects/tokens/export/tokens.colors.json
           git commit -m "chore(tokens): export figma color tokens" || echo "No changes"
           git push
