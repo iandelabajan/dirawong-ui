@@ -69,7 +69,7 @@
      ========================================================= */
 
   /* === Brand Colors === */
-  --dw-color-primary: var(--dw-primitive-red-600);
+  --dw-color-primary: var(--dw-primitive-blue-900);
   --dw-color-accent: var(--dw-primitive-orange-500);
   --dw-color-danger: var(--dw-primitive-red-600);
 
@@ -122,7 +122,7 @@
 
   --dw-color-accent-tonal: var(--dw-primitive-orange-400);
    --dw-color-accent-tonal-light: var(--dw-primitive-orange-100);
-   --dw-color-accent-tonal-dark: var(--dw-primitive-orange-700);
+   --dw-color-accent-tonal-dark: var(--dw-primitive-orange-500);
    /* === On Accent Tonal (text/icons on accent tonal surfaces) === */
    --dw-on-accent-tonal: var(--dw-primitive-gray-50);
    --dw-on-accent-tonal-light: var(--dw-primitive-gray-500);
