@@ -1,0 +1,118 @@
+{
+  "Primitive": {
+    "dw-primitive-blue-100": {
+      "$type": "color",
+      "$value": "#E3E8F9"
+    },
+    "dw-primitive-blue-200": {
+      "$type": "color",
+      "$value": "#C7D2F3"
+    },
+    "dw-primitive-blue-400": {
+      "$type": "color",
+      "$value": "#7B93DB"
+    },
+    "dw-primitive-blue-700": {
+      "$type": "color",
+      "$value": "#2C3E7B"
+    },
+    "dw-primitive-blue-900": {
+      "$type": "color",
+      "$value": "#19305C"
+    },
+    "dw-primitive-orange-100": {
+      "$type": "color",
+      "$value": "#FFEEDE"
+    },
+    "dw-primitive-orange-200": {
+      "$type": "color",
+      "$value": "#FFD1B3"
+    },
+    "dw-primitive-orange-400": {
+      "$type": "color",
+      "$value": "#FBB97C"
+    },
+    "dw-primitive-orange-500": {
+      "$type": "color",
+      "$value": "#F5853E"
+    },
+    "dw-primitive-red-500": {
+      "$type": "color",
+      "$value": "#EF4444"
+    },
+    "dw-primitive-red-600": {
+      "$type": "color",
+      "$value": "#DC2626"
+    },
+    "dw-primitive-red-800": {
+      "$type": "color",
+      "$value": "#991B1B"
+    },
+    "dw-primitive-red-900": {
+      "$type": "color",
+      "$value": "#7A0C0C"
+    },
+    "dw-primitive-gray-50": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "dw-primitive-gray-100": {
+      "$type": "color",
+      "$value": "#F8FAFC"
+    },
+    "dw-primitive-gray-200": {
+      "$type": "color",
+      "$value": "#EEF2F7"
+    },
+    "dw-primitive-gray-400": {
+      "$type": "color",
+      "$value": "#94A3B8"
+    },
+    "dw-primitive-gray-600": {
+      "$type": "color",
+      "$value": "#475569"
+    },
+    "dw-primitive-gray-900": {
+      "$type": "color",
+      "$value": "#0F172A"
+    }
+  },
+  "Semantic": {
+    "dw-color-primary": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-red-600}"
+    },
+    "dw-color-accent": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-orange-500}"
+    },
+    "dw-color-danger": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-red-600}"
+    },
+    "dw-color-primary-tonal": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-400}"
+    },
+    "dw-color-primary-tonal-light": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-100}"
+    },
+    "dw-color-primary-tonal-dark": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-700}"
+    },
+    "dw-color-accent-tonal": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-orange-400}"
+    },
+    "dw-color-accent-tonal-light": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-orange-100}"
+    },
+    "dw-color-accent-tonal-dark": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-orange-700}"
+    }
+  }
+}
