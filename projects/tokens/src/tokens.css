@@ -25,6 +25,7 @@
   --dw-primitive-orange-500: #f5853e;
 
   /* === Primitive Colors: Red === */
+  --dw-primitive-red-500: #ef4444;
   --dw-primitive-red-600: #dc2626;
   --dw-primitive-red-800: #991b1b;
   --dw-primitive-red-900: #7a0c0c;
@@ -68,7 +69,7 @@
      ========================================================= */
 
   /* === Brand Colors === */
-  --dw-color-primary: var(--dw-primitive-red-800);
+  --dw-color-primary: var(--dw-primitive-red-500);
   --dw-color-accent: var(--dw-primitive-orange-500);
   --dw-color-danger: var(--dw-primitive-red-600);
 
