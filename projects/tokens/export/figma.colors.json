@@ -63,10 +63,28 @@
               "value": "#F5853E"
             },
             {
+              "name": "dw-primitive-red-500",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EF4444"
+            },
+            {
               "name": "dw-primitive-red-600",
               "type": "color",
               "isAlias": false,
               "value": "#DC2626"
+            },
+            {
+              "name": "dw-primitive-red-800",
+              "type": "color",
+              "isAlias": false,
+              "value": "#991B1B"
+            },
+            {
+              "name": "dw-primitive-red-900",
+              "type": "color",
+              "isAlias": false,
+              "value": "#7A0C0C"
             },
             {
               "name": "dw-primitive-gray-50",
@@ -120,7 +138,7 @@
               "isAlias": true,
               "value": {
                 "collection": "Primitive",
-                "name": "dw-primitive-blue-900"
+                "name": "dw-primitive-red-500"
               }
             },
             {
