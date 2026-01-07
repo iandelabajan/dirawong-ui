@@ -12,7 +12,6 @@ const meta: Meta = {
 Material buttons customized with Dirawong design tokens.
 
 **Available Variants:**
-- **Elevated**: Raised button with shadow
 - **Filled**: Solid background button (default)
 - **Tonal**: Subtle filled button
 - **Outlined**: Button with border
@@ -29,7 +28,7 @@ Material buttons customized with Dirawong design tokens.
   argTypes: {
     variant: {
       control: 'select',
-      options: ['elevated', 'filled', 'tonal', 'outlined', 'text'],
+      options: ['filled', 'tonal', 'outlined', 'text'],
       description: 'Button style variant',
     },
     text: {
