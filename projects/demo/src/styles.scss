@@ -101,3 +101,16 @@ html {
   gap: var(--dw-space-4);
   flex-wrap: wrap;
 }
+
+
+:root {
+  /* Primitive */
+  --dw-primitive-primary-900: 30 64 175; /* RGB only */
+
+  /* Semantic */
+  --dw-color-primary-rgb: var(--dw-primitive-primary-900);
+
+  /* Derived ambient */
+  --dw-ambient-primary-from: rgba(var(--dw-color-primary-rgb), 0.45);
+  --dw-ambient-primary-via:  rgba(var(--dw-color-primary-rgb), 0.30);
+}

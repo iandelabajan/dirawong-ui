@@ -69,7 +69,7 @@
      ========================================================= */
 
   /* === Brand Colors === */
-  --dw-color-primary: var(--dw-primitive-blue-900);
+  --dw-color-primary: var(--dw-primitive-red-900);
   --dw-color-accent: var(--dw-primitive-orange-500);
   --dw-color-danger: var(--dw-primitive-red-600);
 
