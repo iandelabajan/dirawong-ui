@@ -1,15 +1,103 @@
-<div class="demo-container">
-  <button matButton="filled">
-    Primary Button
-  </button>
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <!-- Ambient wrapper -->
+  <div class="relative flex flex-col items-center">
+    <!-- Demo label -->
+  <div class="relative">
+    <!-- Wider ambient background ONLY -->
+    <div
+      class="absolute -inset-10 rounded-[3rem]
+             bg-gradient-to-br
+             from-indigo-300/50 via-sky-300/40 to-transparent
+             blur-3xl"
+      aria-hidden="true"
+    ></div>
 
-  <button matButton="filled" class="accent-button">
-    Accent Button
-  </button>
+    <!-- Card (UNCHANGED WIDTH) -->
+    <div class="relative w-[500px] max-w-2xl bg-white rounded-2xl shadow-md p-6 text-center">
+      <!-- Header -->
+      <h2 class="text-left font-semibold text-gray-900 mb-6">
+        Documents
+      </h2>
 
-  <button matButton="filled" disabled>
-    Disabled Button
-  </button>
+      <!-- Empty State -->
+      <div class="flex flex-col items-center justify-center py-10">
+        <!-- SVG Illustration -->
+        <svg
+          width="160"
+          height="160"
+          viewBox="0 0 160 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mb-6"
+        >
+          <!-- Concentric rings (color fade, original stroke width) -->
+          <circle cx="80" cy="80" r="72" stroke="#E5E7EB" stroke-opacity="0.65" stroke-width="1" />
+          <circle cx="80" cy="80" r="56" stroke="#E5E7EB" stroke-opacity="0.75" stroke-width="1" />
+          <circle cx="80" cy="80" r="40" stroke="#E5E7EB" stroke-opacity="0.85" stroke-width="1" />
+
+          <!-- Back folder -->
+          <path
+            d="M50 70
+               H74
+               L82 78
+               H110
+               A6 6 0 0 1 116 84
+               V104
+               A6 6 0 0 1 110 110
+               H50
+               A6 6 0 0 1 44 104
+               V76
+               A6 6 0 0 1 50 70
+               Z"
+            fill="#D1D5DB"
+          />
+
+          <!-- Front folder -->
+          <path
+            d="M58 76
+               H78
+               L86 84
+               H116
+               A6 6 0 0 1 122 90
+               V108
+               A6 6 0 0 1 116 114
+               H58
+               A6 6 0 0 1 52 108
+               V82
+               A6 6 0 0 1 58 76
+               Z"
+            fill="#9CA3AF"
+          />
+        </svg>
+
+        <p class="font-medium text-gray-900">
+          No files in this folder
+        </p>
+        <p class="text-sm text-gray-500 mt-1">
+          You may upload new assets to this folder
+        </p>
+
+        <!-- Actions -->
+        <div class="flex gap-3 mt-6">
+          <button
+            mat-stroked-button
+            color="primary"
+            class="px-5 py-2 rounded-md text-sm font-medium"
+          >
+            Upload
+          </button>
+
+          <button
+            mat-flat-button
+            color="accent"
+            class="px-5 py-2 rounded-md text-sm font-medium text-white"
+          >
+            New folder
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <router-outlet />
