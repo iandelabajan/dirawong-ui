@@ -4,123 +4,168 @@
    ============================================================ */
 
 :root {
-  /* =========================================================
+   /* =========================================================
      LAYER 1: PRIMITIVE TOKENS
      ---------------------------------------------------------
      Raw values. Rebrand-safe.
      NEVER used directly by components.
      ========================================================= */
 
-  /* === Primitive Colors: Blue === */
-  --dw-primitive-blue-100: #e3e8f9;
-  --dw-primitive-blue-200: #c7d2f3;
-  --dw-primitive-blue-400: #7b93db;
-  --dw-primitive-blue-700: #2c3e7b;
-  --dw-primitive-blue-900: #19305c;
+   /* === Primitive Colors: Blue === */
+   --dw-primitive-blue-100: #D0D4F7;
+   --dw-primitive-blue-200: #9AA1E5;
+   --dw-primitive-blue-300: #6670C2;
+   --dw-primitive-blue-400: #3E4698;
+   --dw-primitive-blue-500: #232B6E;
+   --dw-primitive-blue-600: #1F2663;
+   --dw-primitive-blue-700: #1C2258;
+   --dw-primitive-blue-800: #151A45;
+   --dw-primitive-blue-900: #0F1236;
 
-  /* === Primitive Colors: Orange === */
-  --dw-primitive-orange-100: #ffeede;
-  --dw-primitive-orange-200: #ffd1b3;
-  --dw-primitive-orange-400: #fbb97c;
-  --dw-primitive-orange-500: #f5853e;
+   /* === Primitive Colors: Orange === */
+   --dw-primitive-orange-100: #FFF0E6;
+   --dw-primitive-orange-200: #FFE0CC;
+   --dw-primitive-orange-300: #FDC4A1;
+   --dw-primitive-orange-400: #F9A06A;
+   --dw-primitive-orange-500: #F5853D;
+   --dw-primitive-orange-600: #DE6F2F;
+   --dw-primitive-orange-700: #C15E22;
+   --dw-primitive-orange-800: #9A4A15;
+   --dw-primitive-orange-900: #7A3A0E;
 
-  /* === Primitive Colors: Red === */
-  --dw-primitive-red-500: #ef4444;
-  --dw-primitive-red-600: #dc2626;
-  --dw-primitive-red-800: #991b1b;
-  --dw-primitive-red-900: #7a0c0c;
+   /* === Primitive Colors: Red === */
+   --dw-primitive-red-100: #FDE7EB;
+   --dw-primitive-red-200: #F7BCC6;
+   --dw-primitive-red-300: #EE8697;
+   --dw-primitive-red-400: #E0576F;
+   --dw-primitive-red-500: #C73A55;
+   --dw-primitive-red-600: #B2334A;
+   --dw-primitive-red-700: #962C40;
+   --dw-primitive-red-800: #6F1F30;
+   --dw-primitive-red-900: #4A1421;
 
-  /* === Primitive Colors: Gray === */
-  --dw-primitive-gray-50: #ffffff;
-  --dw-primitive-gray-100: #f8fafc;
-  --dw-primitive-gray-200: #eef2f7;
-  --dw-primitive-gray-400: #94a3b8;
-  --dw-primitive-gray-600: #475569;
-  --dw-primitive-gray-900: #0f172a;
+   /* === Primitive Colors: Gray === */
+   --dw-primitive-gray-100: #F4F5F8;
+   --dw-primitive-gray-200: #E6E8EE;
+   --dw-primitive-gray-300: #D1D5E0;
+   --dw-primitive-gray-400: #B3B8C9;
+   --dw-primitive-gray-500: #8E94A8;
+   --dw-primitive-gray-600: #6F748A;
+   --dw-primitive-gray-700: #52566A;
+   --dw-primitive-gray-800: #373A4A;
+   --dw-primitive-gray-900: #1F212B;
 
-  /* === Primitive Spacing (4pt grid) === */
-  --dw-primitive-space-1: 4px;
-  --dw-primitive-space-2: 8px;
-  --dw-primitive-space-3: 12px;
-  --dw-primitive-space-4: 16px;
-  --dw-primitive-space-5: 20px;
-  --dw-primitive-space-6: 24px;
+   /* === Primitive Colors: Green === */
+   --dw-primitive-green-100: #E6F4F1;
+   --dw-primitive-green-200: #C3E6DD;
+   --dw-primitive-green-300: #8FD0C4;
+   --dw-primitive-green-400: #55B5A5;
+   --dw-primitive-green-500: #2F9C8B;
+   --dw-primitive-green-600: #278B7C;
+   --dw-primitive-green-700: #1F7468;
+   --dw-primitive-green-800: #16564D;
+   --dw-primitive-green-900: #0E3A34;
 
-  /* === Primitive Radius === */
-  --dw-primitive-radius-sm: 8px;
-  --dw-primitive-radius-md: 12px;
-  --dw-primitive-radius-lg: 16px;
+   /* === Primitive Colors: Yellow === */
+   --dw-primitive-yellow-100: #FFF6D9;
+   --dw-primitive-yellow-200: #FFECB3;
+   --dw-primitive-yellow-300: #FFE07A;
+   --dw-primitive-yellow-400: #FFD24D;
+   --dw-primitive-yellow-500: #F5C026;
+   --dw-primitive-yellow-600: #DFAE1F;
+   --dw-primitive-yellow-700: #B89218;
+   --dw-primitive-yellow-800: #8A6E11;
+   --dw-primitive-yellow-900: #5C480B;
 
-  /* === Primitive Typography === */
-  --dw-primitive-font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --dw-primitive-font-size-sm: 12px;
-  --dw-primitive-font-size-base: 14px;
-  --dw-primitive-font-size-lg: 16px;
-  --dw-primitive-font-weight-regular: 400;
-  --dw-primitive-font-weight-medium: 500;
-  --dw-primitive-font-weight-semibold: 600;
+   /* === Primitive Spacing (4pt grid) === */
+   --dw-primitive-space-1: 4px;
+   --dw-primitive-space-2: 8px;
+   --dw-primitive-space-3: 12px;
+   --dw-primitive-space-4: 16px;
+   --dw-primitive-space-5: 20px;
+   --dw-primitive-space-6: 24px;
+
+   /* === Primitive Radius === */
+   --dw-primitive-radius-sm: 8px;
+   --dw-primitive-radius-md: 12px;
+   --dw-primitive-radius-lg: 16px;
+
+   /* === Primitive Typography === */
+   --dw-primitive-font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+   --dw-primitive-font-size-sm: 12px;
+   --dw-primitive-font-size-base: 14px;
+   --dw-primitive-font-size-lg: 16px;
+   --dw-primitive-font-weight-regular: 400;
+   --dw-primitive-font-weight-medium: 500;
+   --dw-primitive-font-weight-semibold: 600;
 
 
-  /* =========================================================
+   /* =========================================================
      LAYER 2: SEMANTIC TOKENS
      ---------------------------------------------------------
      Purpose-driven.
      ONLY tokens components may consume.
      ========================================================= */
 
-  /* === Brand Colors === */
-  --dw-color-primary: var(--dw-primitive-red-900);
+  /* Brand */
+  --dw-color-primary: var(--dw-primitive-blue-500);
   --dw-color-accent: var(--dw-primitive-orange-500);
-  --dw-color-danger: var(--dw-primitive-red-600);
 
-  /* === On Colors (text/icons on filled surfaces) === */
-  --dw-on-primary: var(--dw-primitive-gray-50);
-  --dw-on-accent: var(--dw-primitive-gray-50);
-  --dw-on-danger: var(--dw-primitive-gray-50);
+  /* Text */
+  --dw-color-text-primary: var(--dw-primitive-gray-900);
+  --dw-color-text-secondary: var(--dw-primitive-gray-600);
+  --dw-color-text-disabled: var(--dw-primitive-gray-400);
+  --dw-color-text-on-primary: #ffffff;
+  --dw-color-text-on-accent: #1a1a1a;
 
-  /* === Surfaces (Material-friendly) === */
-  --dw-surface-base: var(--dw-primitive-gray-50);
-   --dw-surface-container: var(--dw-primitive-gray-100);
+  /* Background */
+  --dw-color-bg-page: var(--dw-primitive-gray-100);
+  --dw-color-bg-surface: #ffffff;
+  --dw-color-bg-hover: var(--dw-primitive-blue-100);
 
-  /* === Text === */
-  --dw-text-primary: var(--dw-primitive-gray-900);
-  --dw-text-secondary: var(--dw-primitive-gray-600);
-  --dw-text-disabled: var(--dw-primitive-gray-400);
+  /* Border / Focus */
+  --dw-color-border-default: var(--dw-primitive-gray-300);
+  --dw-color-border-focus: var(--dw-primitive-blue-500);
 
-  /* === Spacing === */
-  --dw-space-1: var(--dw-primitive-space-1);
-  --dw-space-2: var(--dw-primitive-space-2);
-  --dw-space-3: var(--dw-primitive-space-3);
-  --dw-space-4: var(--dw-primitive-space-4);
-  --dw-space-5: var(--dw-primitive-space-5);
-  --dw-space-6: var(--dw-primitive-space-6);
+  /* States */
+  --dw-color-success: var(--dw-primitive-green-500);
+  --dw-color-warning: var(--dw-primitive-yellow-500);
+  --dw-color-error: var(--dw-primitive-red-500);
 
-  /* === Radius === */
-  --dw-radius-sm: var(--dw-primitive-radius-sm);
-  --dw-radius-md: var(--dw-primitive-radius-md);
-  --dw-radius-lg: var(--dw-primitive-radius-lg);
+   /* === Spacing === */
+   --dw-space-1: var(--dw-primitive-space-1);
+   --dw-space-2: var(--dw-primitive-space-2);
+   --dw-space-3: var(--dw-primitive-space-3);
+   --dw-space-4: var(--dw-primitive-space-4);
+   --dw-space-5: var(--dw-primitive-space-5);
+   --dw-space-6: var(--dw-primitive-space-6);
 
-  /* === Typography === */
-  --dw-font-family: var(--dw-primitive-font-sans);
-  --dw-font-size-sm: var(--dw-primitive-font-size-sm);
-  --dw-font-size-base: var(--dw-primitive-font-size-base);
-  --dw-font-size-lg: var(--dw-primitive-font-size-lg);
-  --dw-font-weight-regular: var(--dw-primitive-font-weight-regular);
-  --dw-font-weight-medium: var(--dw-primitive-font-weight-medium);
-  --dw-font-weight-semibold: var(--dw-primitive-font-weight-semibold);
+   /* === Radius === */
+   --dw-radius-sm: var(--dw-primitive-radius-sm);
+   --dw-radius-md: var(--dw-primitive-radius-md);
+   --dw-radius-lg: var(--dw-primitive-radius-lg);
+
+   /* === Typography === */
+   --dw-font-family: var(--dw-primitive-font-sans);
+   --dw-font-size-sm: var(--dw-primitive-font-size-sm);
+   --dw-font-size-base: var(--dw-primitive-font-size-base);
+   --dw-font-size-lg: var(--dw-primitive-font-size-lg);
+   --dw-font-weight-regular: var(--dw-primitive-font-weight-regular);
+   --dw-font-weight-medium: var(--dw-primitive-font-weight-medium);
+   --dw-font-weight-semibold: var(--dw-primitive-font-weight-semibold);
 
 
-  /* =========================================================
+   /* =========================================================
      FUTURE: TONAL / MATERIAL 3 TOKENS
      ---------------------------------------------------------
      Not consumed yet. Safe to extend later.
      ========================================================= */
 
-  --dw-color-primary-tonal: var(--dw-primitive-blue-400);
-  --dw-color-primary-tonal-light: var(--dw-primitive-blue-100);
-  --dw-color-primary-tonal-dark: var(--dw-primitive-blue-700);
+   --dw-color-primary-tonal: var(--dw-primitive-blue-400);
+   --dw-color-primary-tonal-light: var(--dw-primitive-blue-100);
+   --dw-color-primary-tonal-dark: var(--dw-primitive-blue-700);
 
-  --dw-color-accent-tonal: var(--dw-primitive-orange-400);
+   --dw-color-accent-tonal: var(--dw-primitive-orange-400);
    --dw-color-accent-tonal-light: var(--dw-primitive-orange-100);
    --dw-color-accent-tonal-dark: var(--dw-primitive-orange-500);
    /* === On Accent Tonal (text/icons on accent tonal surfaces) === */
@@ -136,9 +181,9 @@
    ============================================================ */
 
 body {
-  font-family: var(--dw-font-family);
-  font-size: var(--dw-font-size-base);
-  font-weight: var(--dw-font-weight-regular);
-  color: var(--dw-text-primary);
-  background-color: var(--dw-surface-base);
+   font-family: var(--dw-font-family);
+   font-size: var(--dw-font-size-base);
+   font-weight: var(--dw-font-weight-regular);
+   color: var(--dw-text-primary);
+   background-color: var(--dw-surface-base);
 }
