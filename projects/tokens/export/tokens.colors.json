@@ -1,5 +1,9 @@
 {
   "Primitive": {
+    "dw-primitive-blue-50": {
+      "$type": "color",
+      "$value": "#E8EBFB"
+    },
     "dw-primitive-blue-100": {
       "$type": "color",
       "$value": "#D0D4F7"
@@ -35,6 +39,10 @@
     "dw-primitive-blue-900": {
       "$type": "color",
       "$value": "#0F1236"
+    },
+    "dw-primitive-orange-50": {
+      "$type": "color",
+      "$value": "#FFF6EF"
     },
     "dw-primitive-orange-100": {
       "$type": "color",
@@ -72,6 +80,10 @@
       "$type": "color",
       "$value": "#7A3A0E"
     },
+    "dw-primitive-red-50": {
+      "$type": "color",
+      "$value": "#FEF2F4"
+    },
     "dw-primitive-red-100": {
       "$type": "color",
       "$value": "#FDE7EB"
@@ -107,6 +119,10 @@
     "dw-primitive-red-900": {
       "$type": "color",
       "$value": "#4A1421"
+    },
+    "dw-primitive-gray-50": {
+      "$type": "color",
+      "$value": "#FAFBFD"
     },
     "dw-primitive-gray-100": {
       "$type": "color",
@@ -144,6 +160,10 @@
       "$type": "color",
       "$value": "#1F212B"
     },
+    "dw-primitive-green-50": {
+      "$type": "color",
+      "$value": "#F0FAF8"
+    },
     "dw-primitive-green-100": {
       "$type": "color",
       "$value": "#E6F4F1"
@@ -179,6 +199,10 @@
     "dw-primitive-green-900": {
       "$type": "color",
       "$value": "#0E3A34"
+    },
+    "dw-primitive-yellow-50": {
+      "$type": "color",
+      "$value": "#FFFBEB"
     },
     "dw-primitive-yellow-100": {
       "$type": "color",
