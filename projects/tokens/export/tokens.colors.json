@@ -2,23 +2,23 @@
   "Primitive": {
     "dw-primitive-blue-50": {
       "$type": "color",
-      "$value": "#E8EBFB"
+      "$value": "#F4F5FA"
     },
     "dw-primitive-blue-100": {
       "$type": "color",
-      "$value": "#D0D4F7"
+      "$value": "#DEDFED"
     },
     "dw-primitive-blue-200": {
       "$type": "color",
-      "$value": "#9AA1E5"
+      "$value": "#C6C9E2"
     },
     "dw-primitive-blue-300": {
       "$type": "color",
-      "$value": "#6670C2"
+      "$value": "#9FA6CF"
     },
     "dw-primitive-blue-400": {
       "$type": "color",
-      "$value": "#3E4698"
+      "$value": "#6B75B3"
     },
     "dw-primitive-blue-500": {
       "$type": "color",
@@ -26,39 +26,39 @@
     },
     "dw-primitive-blue-600": {
       "$type": "color",
-      "$value": "#1F2663"
+      "$value": "#1A2051"
     },
     "dw-primitive-blue-700": {
       "$type": "color",
-      "$value": "#1C2258"
+      "$value": "#474B6B"
     },
     "dw-primitive-blue-800": {
       "$type": "color",
-      "$value": "#151A45"
+      "$value": "#2D3153"
     },
     "dw-primitive-blue-900": {
       "$type": "color",
-      "$value": "#0F1236"
+      "$value": "#171A36"
     },
     "dw-primitive-orange-50": {
       "$type": "color",
-      "$value": "#FFF6EF"
+      "$value": "#FAF7F4"
     },
     "dw-primitive-orange-100": {
       "$type": "color",
-      "$value": "#FFF0E6"
+      "$value": "#EDE4DE"
     },
     "dw-primitive-orange-200": {
       "$type": "color",
-      "$value": "#FFE0CC"
+      "$value": "#F2C9AE"
     },
     "dw-primitive-orange-300": {
       "$type": "color",
-      "$value": "#FDC4A1"
+      "$value": "#EFAE84"
     },
     "dw-primitive-orange-400": {
       "$type": "color",
-      "$value": "#F9A06A"
+      "$value": "#EB8F55"
     },
     "dw-primitive-orange-500": {
       "$type": "color",
@@ -66,19 +66,19 @@
     },
     "dw-primitive-orange-600": {
       "$type": "color",
-      "$value": "#DE6F2F"
+      "$value": "#F36E19"
     },
     "dw-primitive-orange-700": {
       "$type": "color",
-      "$value": "#C15E22"
+      "$value": "#6B5547"
     },
     "dw-primitive-orange-800": {
       "$type": "color",
-      "$value": "#9A4A15"
+      "$value": "#533C2D"
     },
     "dw-primitive-orange-900": {
       "$type": "color",
-      "$value": "#7A3A0E"
+      "$value": "#362317"
     },
     "dw-primitive-red-50": {
       "$type": "color",
@@ -290,45 +290,73 @@
       "$type": "color",
       "$value": "{Primitive.dw-primitive-orange-500}"
     },
-    "dw-color-text-primary": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-gray-900}"
-    },
-    "dw-color-text-secondary": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-gray-600}"
-    },
-    "dw-color-text-disabled": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-gray-400}"
-    },
-    "dw-color-bg-page": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-gray-100}"
-    },
-    "dw-color-bg-hover": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-blue-100}"
-    },
-    "dw-color-border-default": {
-      "$type": "color",
-      "$value": "{Primitive.dw-primitive-gray-300}"
-    },
-    "dw-color-border-focus": {
+    "dw-color-action-primary": {
       "$type": "color",
       "$value": "{Primitive.dw-primitive-blue-500}"
     },
-    "dw-color-success": {
+    "dw-color-action-primary-hover": {
       "$type": "color",
-      "$value": "{Primitive.dw-primitive-green-500}"
+      "$value": "{Primitive.dw-primitive-blue-600}"
     },
-    "dw-color-warning": {
+    "dw-color-action-accent": {
       "$type": "color",
-      "$value": "{Primitive.dw-primitive-yellow-500}"
+      "$value": "{Primitive.dw-primitive-orange-500}"
     },
-    "dw-color-error": {
+    "dw-color-action-accent-hover": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-orange-600}"
+    },
+    "dw-color-surface-sunken": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-50}"
+    },
+    "dw-color-surface-subtle": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-gray-100}"
+    },
+    "dw-color-on-surface-primary": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-900}"
+    },
+    "dw-color-on-surface-secondary": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-800}"
+    },
+    "dw-color-border-default": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-100}"
+    },
+    "dw-color-border-strong": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-200}"
+    },
+    "dw-color-divider": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-gray-200}"
+    },
+    "dw-color-text-primary": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-900}"
+    },
+    "dw-color-text-secondary": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-800}"
+    },
+    "dw-color-text-muted": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-gray-500}"
+    },
+    "dw-color-text-link": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-blue-500}"
+    },
+    "dw-color-status-error": {
       "$type": "color",
       "$value": "{Primitive.dw-primitive-red-500}"
+    },
+    "dw-color-status-success": {
+      "$type": "color",
+      "$value": "{Primitive.dw-primitive-green-500}"
     },
     "dw-color-primary-tonal": {
       "$type": "color",
