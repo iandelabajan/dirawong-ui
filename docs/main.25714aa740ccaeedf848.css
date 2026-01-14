@@ -59,6 +59,18 @@
    --dw-primitive-gray-800: #373A4A;
    --dw-primitive-gray-900: #1F212B;
 
+   /* === Primitive Colors: Black (Brand) === */
+   --dw-primitive-black-50:  #F5F6FA;
+   --dw-primitive-black-100: #E8EAF2;
+   --dw-primitive-black-200: #D2D6E3;
+   --dw-primitive-black-300: #B6BCCF;
+   --dw-primitive-black-400: #8E95AD;
+   --dw-primitive-black-500: #5F667F;
+   --dw-primitive-black-600: #434965;
+   --dw-primitive-black-700: #2F344D;
+   --dw-primitive-black-800: #1B1F33;
+   --dw-primitive-black-900: #0E1020;
+
    /* === Primitive Colors: Green === */
    --dw-primitive-green-50: #F0FAF8;
    --dw-primitive-green-100: #E6F4F1;
