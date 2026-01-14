@@ -160,6 +160,46 @@
       "$type": "color",
       "$value": "#1F212B"
     },
+    "dw-primitive-black-50": {
+      "$type": "color",
+      "$value": "#F5F6FA"
+    },
+    "dw-primitive-black-100": {
+      "$type": "color",
+      "$value": "#E8EAF2"
+    },
+    "dw-primitive-black-200": {
+      "$type": "color",
+      "$value": "#D2D6E3"
+    },
+    "dw-primitive-black-300": {
+      "$type": "color",
+      "$value": "#B6BCCF"
+    },
+    "dw-primitive-black-400": {
+      "$type": "color",
+      "$value": "#8E95AD"
+    },
+    "dw-primitive-black-500": {
+      "$type": "color",
+      "$value": "#5F667F"
+    },
+    "dw-primitive-black-600": {
+      "$type": "color",
+      "$value": "#434965"
+    },
+    "dw-primitive-black-700": {
+      "$type": "color",
+      "$value": "#2F344D"
+    },
+    "dw-primitive-black-800": {
+      "$type": "color",
+      "$value": "#1B1F33"
+    },
+    "dw-primitive-black-900": {
+      "$type": "color",
+      "$value": "#0E1020"
+    },
     "dw-primitive-green-50": {
       "$type": "color",
       "$value": "#F0FAF8"
