@@ -1,14 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { MatButtonModule } from '@angular/material/button';
 import { argsToTemplate } from '@storybook/angular';
+import { createStoryMeta } from '../../../.storybook/story-helpers';
 
-const meta: Meta = {
+const meta: Meta = createStoryMeta({
   title: 'Components/Button',
-  tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: `
+  description: `
 Material buttons customized with Dirawong design tokens.
 
 **Available Variants:**
@@ -21,10 +18,7 @@ Material buttons customized with Dirawong design tokens.
 - Border radius: \`--mat-button-*-container-shape: var(--dw-radius-md)\`
 - Padding: \`var(--dw-space-3) var(--dw-space-4)\`
 - Colors: \`--mat-sys-primary\`, \`--mat-sys-tertiary\`
-        `,
-      },
-    },
-  },
+  `,
   argTypes: {
     variant: {
       control: 'select',
@@ -45,7 +39,7 @@ Material buttons customized with Dirawong design tokens.
     text: 'Button',
     disabled: false,
   },
-};
+});
 
 export default meta;
 type Story = StoryObj;
