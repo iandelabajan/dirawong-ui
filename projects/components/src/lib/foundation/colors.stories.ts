@@ -1,12 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/angular';
+import { createStoryMeta } from '../../../.storybook/story-helpers';
 
-const meta: Meta = {
+const meta: Meta = createStoryMeta({
   title: 'Foundation/Colors',
-  tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: `
+  description: `
 Color tokens are the foundation of the Dirawong Design System.
 
 **Token Architecture:**
@@ -15,11 +12,8 @@ Color tokens are the foundation of the Dirawong Design System.
 
 This layered approach allows rebranding by swapping primitives while keeping
 semantic usage stable across the application.
-        `,
-      },
-    },
-  },
-};
+  `,
+});
 
 export default meta;
 type Story = StoryObj;
