@@ -1,20 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture } from '@angular/core/testing';
 
 import { Tokens } from './tokens';
+import { createComponentFixture } from './testing/component-test-helpers';
 
 describe('Tokens', () => {
   let component: Tokens;
   let fixture: ComponentFixture<Tokens>;
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Tokens]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(Tokens);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
+    ({ component, fixture } = await createComponentFixture(Tokens));
   });
 
   it('should create', () => {
