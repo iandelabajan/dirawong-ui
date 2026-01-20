@@ -5,6 +5,11 @@ import { Type } from '@angular/core';
  * Creates a component fixture for testing.
  * This helper reduces boilerplate in component tests by handling the common setup pattern.
  *
+ * Note: This utility is intentionally duplicated across projects (tokens, components, demo)
+ * rather than shared to maintain project independence and avoid creating cross-project
+ * dependencies for dev-only test utilities. Each project can evolve its testing needs
+ * independently.
+ *
  * @template T - The component type
  * @param component - The component class to test
  * @returns An object containing the component instance and fixture
